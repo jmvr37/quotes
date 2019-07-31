@@ -11,8 +11,21 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div class="footer-nav">	
+				<ul>
+						<li>
+					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/quotes-on-dev/' ); ?>"> About</a>
+						</li>
+					<li>
+					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/archive/' ); ?>"> Archives</a>
+					</li>
+					</ul>
+				</div>
+				<p>Brought to you by
+					<a href="<?php echo esc_url( 'https://redacademy.com/vancouver/' ); ?>"> RED Academy</a>
+					</p>
 				</div><!-- .site-info -->
+				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

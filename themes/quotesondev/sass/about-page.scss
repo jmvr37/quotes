@@ -1,0 +1,30 @@
+.page-template-default {
+  .hfeed {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4.5%;
+
+    .site-content {
+      .content-area {
+        .site-main {
+          .entry-content {
+            p {
+              color: white;
+              a {
+                text-decoration: none;
+                color: $green_color;
+                &:hover {
+                  color: darken($green_color, $amount: 8);
+                }
+              }
+            }
+          }
+          .entry-title {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

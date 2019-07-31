@@ -571,6 +571,57 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+h1 {
+  font-family: "Exo Web";
+  color: #fff; }
+
+body {
+  background-color: #222; }
+
+.hfeed {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5%; }
+  .hfeed .site-content .content-area .site-main #new-quote {
+    background-color: #222;
+    border: 2px solid #0c0;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.75rem 2.25rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: #0c0; }
+  .hfeed .site-content .content-area .site-main .logo img {
+    width: 360px;
+    margin: 0 auto; }
+
+.site-footer .site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4.5rem 0 3rem; }
+  .site-footer .site-info .footer-nav ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 5px; }
+    .site-footer .site-info .footer-nav ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+  .site-footer .site-info p {
+    color: white; }
+    .site-footer .site-info p a {
+      text-decoration: none;
+      color: #00cc00; }
+      .site-footer .site-info p a:hover {
+        color: #00a300; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -593,3 +644,55 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.page-template-default .hfeed {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4.5%; }
+  .page-template-default .hfeed .site-content .content-area .site-main .entry-content p {
+    color: white; }
+    .page-template-default .hfeed .site-content .content-area .site-main .entry-content p a {
+      text-decoration: none;
+      color: #00cc00; }
+      .page-template-default .hfeed .site-content .content-area .site-main .entry-content p a:hover {
+        color: #00a300; }
+  .page-template-default .hfeed .site-content .content-area .site-main .entry-title {
+    color: white; }
+
+.page-template .site-content .content-area .site-main .taxo ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template .site-content .content-area .site-main .taxo ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1.2rem; }
+    .page-template .site-content .content-area .site-main .taxo ul li a {
+      text-decoration: none;
+      color: #00cc00; }
+
+.page-template .site-content .content-area .site-main .cats {
+  clear: both;
+  content: '';
+  display: table; }
+  .page-template .site-content .content-area .site-main .cats ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template .site-content .content-area .site-main .cats ul li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      margin-right: 1.2rem; }
+      .page-template .site-content .content-area .site-main .cats ul li a {
+        text-decoration: none;
+        color: #00cc00; }
