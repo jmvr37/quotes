@@ -1,0 +1,58 @@
+.page-template-default {
+  .site-main {
+    .entry-content {
+      #submit {
+        #form {
+          .title-form {
+            color: white;
+            margin-bottom: 15px;
+          }
+          .text-form {
+            #author {
+              background-color: #222222;
+              border: 2px solid $green_color;
+              margin-bottom: 15px;
+            }
+          }
+          .quote-form {
+            #quote {
+              height: 70px;
+              background-color: #222222;
+              border: 2px solid $green_color;
+              margin-bottom: 15px;
+            }
+          }
+          .source-form {
+            #source {
+              width: 230px;
+              background-color: #222222;
+              border: 2px solid $green_color;
+              margin-bottom: 15px;
+            }
+          }
+          .url-form {
+            #url {
+              background-color: #222222;
+              border: 2px solid $green_color;
+              margin-bottom: 15px;
+              width: 230px;
+            }
+          }
+          .submit-button {
+            #submit-quote {
+              color: $green_color;
+              background-color: #222222;
+              border: 2px solid $green_color;
+              width: 140px;
+              height: 35px;
+              box-shadow: none;
+              text-shadow: none;
+              padding: 5px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

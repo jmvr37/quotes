@@ -1,0 +1,29 @@
+.archive.tag {
+  .site-content {
+    .content-area {
+      .site-main {
+        .page-header {
+          .page-title {
+            border-bottom: 1px dashed white;
+          }
+        }
+        .articles {
+          border-bottom: 1px dashed white;
+          .entry-content {
+            p {
+              font-size: 20px;
+              color: white;
+            }
+          }
+          .entry-header {
+            .entry-title {
+              margin: 30px 0;
+              font-size: 20px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

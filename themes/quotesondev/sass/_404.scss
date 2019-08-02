@@ -1,0 +1,40 @@
+.error404 {
+  .content-area {
+    .site-main {
+      .not-found {
+        .page-content {
+          p {
+            color: white;
+          }
+          .search-form {
+            fieldset {
+              border: none;
+              .search-field {
+                width: 210px;
+                background-color: #2222;
+                box-shadow: none;
+                border: 1px solid $green_color;
+              }
+              .search-submit {
+                background-color: #2222;
+                border: none;
+                box-shadow: none;
+                text-shadow: none;
+                font-size: 16px;
+                #search-icon {
+                  color: $green_color;
+                }
+              }
+            }
+          }
+        }
+        .page-header {
+          .page-title {
+            color: white;
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }
+}

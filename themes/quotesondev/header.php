@@ -33,3 +33,8 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+			<div class="logo">
+			<a href="http://localhost:3000/quotes/" rel="logo">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/images/qod-logo.svg" alt="quotes logo">
+			</a>
+		</div>

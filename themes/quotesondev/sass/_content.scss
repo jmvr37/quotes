@@ -63,6 +63,14 @@ body {
           img {
             width: 360px;
             margin: 0 auto;
+
+            @include tablet {
+              width: 500px;
+            }
+            @include desktop {
+              margin: 0 auto;
+              width: 700px;
+            }
           }
         }
       }
@@ -72,9 +80,13 @@ body {
 
 .site-footer {
   .site-info {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     margin: 4.5rem 0 3rem;
+    @include tablet {
+      display: flex;
+    }
+
     .footer-nav {
       ul {
         display: inline-flex;
@@ -82,6 +94,9 @@ body {
         margin: 0;
         padding: 5px;
         li {
+          border-right: 1px solid white;
+          line-height: 1;
+          padding: 0 1rem;
           a {
             text-decoration: none;
             color: $green_color;
@@ -91,6 +106,12 @@ body {
     }
     p {
       color: white;
+      // padding: 0 1.3rem;
+      @include tablet {
+        line-height: 1;
+        margin-top: 6px;
+        margin-left: 5px;
+      }
 
       a {
         text-decoration: none;

@@ -19,6 +19,9 @@
 					<li>
 					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/archive/' ); ?>"> Archives</a>
 					</li>
+					<li>
+					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/submit/' ); ?>"> Submit a Quote</a>
+					</li>
 					</ul>
 				</div>
 				<p>Brought to you by

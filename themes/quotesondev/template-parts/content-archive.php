@@ -11,11 +11,11 @@
 	
 
 	<header class="entry-content">
-		<p><?php the_content();  ?> </p>
+		<?php the_content();  ?> 
 		
 	</header><!-- .entry-content -->
 	<div class="entry-header">
-		<div class="entry-title"><?php the_title(); ?></div>
-		<span class="link-source"></span>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 </div><!-- .entry-header -->
 </article><!-- #post-## -->

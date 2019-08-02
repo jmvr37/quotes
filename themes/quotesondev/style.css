@@ -596,14 +596,23 @@ body {
   .hfeed .site-content .content-area .site-main .logo img {
     width: 360px;
     margin: 0 auto; }
+    @media only screen and (min-width: 600px) {
+      .hfeed .site-content .content-area .site-main .logo img {
+        width: 500px; } }
+    @media only screen and (min-width: 1000px) {
+      .hfeed .site-content .content-area .site-main .logo img {
+        margin: 0 auto;
+        width: 700px; } }
 
 .site-footer .site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
+  @media only screen and (min-width: 600px) {
+    .site-footer .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .site-footer .site-info .footer-nav ul {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -611,11 +620,20 @@ body {
     list-style: none;
     margin: 0;
     padding: 5px; }
-    .site-footer .site-info .footer-nav ul li a {
-      text-decoration: none;
-      color: #00cc00; }
+    .site-footer .site-info .footer-nav ul li {
+      border-right: 1px solid white;
+      line-height: 1;
+      padding: 0 1rem; }
+      .site-footer .site-info .footer-nav ul li a {
+        text-decoration: none;
+        color: #00cc00; }
   .site-footer .site-info p {
     color: white; }
+    @media only screen and (min-width: 600px) {
+      .site-footer .site-info p {
+        line-height: 1;
+        margin-top: 6px;
+        margin-left: 5px; } }
     .site-footer .site-info p a {
       text-decoration: none;
       color: #00cc00; }
@@ -659,28 +677,14 @@ object {
   .page-template-default .hfeed .site-content .content-area .site-main .entry-title {
     color: white; }
 
-.page-template .site-content .content-area .site-main .taxo ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .page-template .site-content .content-area .site-main .taxo ul li {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    margin-right: 1.2rem; }
-    .page-template .site-content .content-area .site-main .taxo ul li a {
-      text-decoration: none;
-      color: #00cc00; }
-
-.page-template .site-content .content-area .site-main .cats {
-  clear: both;
-  content: '';
-  display: table; }
-  .page-template .site-content .content-area .site-main .cats ul {
+.page-template {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5%; }
+  .page-template h2 {
+    color: white; }
+  .page-template .site-content .content-area .site-main .authors ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
@@ -689,10 +693,153 @@ object {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .page-template .site-content .content-area .site-main .cats ul li {
+    .page-template .site-content .content-area .site-main .authors ul li {
       font-size: 1rem;
       margin-bottom: 0.5rem;
       margin-right: 1.2rem; }
-      .page-template .site-content .content-area .site-main .cats ul li a {
+      .page-template .site-content .content-area .site-main .authors ul li a {
         text-decoration: none;
         color: #00cc00; }
+  .page-template .site-content .content-area .site-main .taxo ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template .site-content .content-area .site-main .taxo ul li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      margin-right: 1.2rem; }
+      .page-template .site-content .content-area .site-main .taxo ul li a {
+        text-decoration: none;
+        color: #00cc00; }
+  .page-template .site-content .content-area .site-main .cats {
+    clear: both;
+    content: '';
+    display: table; }
+    .page-template .site-content .content-area .site-main .cats ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .page-template .site-content .content-area .site-main .cats ul li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1.2rem; }
+        .page-template .site-content .content-area .site-main .cats ul li a {
+          text-decoration: none;
+          color: #00cc00; }
+
+.page-template-default .site-main .entry-content #submit #form .title-form {
+  color: white;
+  margin-bottom: 15px; }
+
+.page-template-default .site-main .entry-content #submit #form .text-form #author {
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  margin-bottom: 15px; }
+
+.page-template-default .site-main .entry-content #submit #form .quote-form #quote {
+  height: 70px;
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  margin-bottom: 15px; }
+
+.page-template-default .site-main .entry-content #submit #form .source-form #source {
+  width: 230px;
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  margin-bottom: 15px; }
+
+.page-template-default .site-main .entry-content #submit #form .url-form #url {
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  margin-bottom: 15px;
+  width: 230px; }
+
+.page-template-default .site-main .entry-content #submit #form .submit-button #submit-quote {
+  color: #00cc00;
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  width: 140px;
+  height: 35px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  padding: 5px;
+  font-size: 13px; }
+
+.home #page .site-content .content-area .site-main .entry-content p {
+  color: white;
+  font-size: 30px; }
+
+.home #page .site-content .content-area .site-main .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .home #page .site-content .content-area .site-main .entry-header .entry-title {
+    margin-right: 10px;
+    color: white; }
+  .home #page .site-content .content-area .site-main .entry-header .link-source {
+    color: white; }
+    .home #page .site-content .content-area .site-main .entry-header .link-source a {
+      text-decoration: none;
+      color: #00cc00; }
+
+.archive.category .site-content .content-area .site-main .page-header .page-title {
+  border-bottom: 1px dashed white; }
+
+.archive.category .site-content .content-area .site-main .articles {
+  border-bottom: 1px dashed white; }
+  .archive.category .site-content .content-area .site-main .articles .entry-content p {
+    font-size: 20px;
+    color: white; }
+  .archive.category .site-content .content-area .site-main .articles .entry-header .entry-title {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: normal; }
+
+.archive.tag .site-content .content-area .site-main .page-header .page-title {
+  border-bottom: 1px dashed white; }
+
+.archive.tag .site-content .content-area .site-main .articles {
+  border-bottom: 1px dashed white; }
+  .archive.tag .site-content .content-area .site-main .articles .entry-content p {
+    font-size: 20px;
+    color: white; }
+  .archive.tag .site-content .content-area .site-main .articles .entry-header .entry-title {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: normal; }
+
+.error404 .content-area .site-main .not-found .page-content p {
+  color: white; }
+
+.error404 .content-area .site-main .not-found .page-content .search-form fieldset {
+  border: none; }
+  .error404 .content-area .site-main .not-found .page-content .search-form fieldset .search-field {
+    width: 210px;
+    background-color: #2222;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px solid #00cc00; }
+  .error404 .content-area .site-main .not-found .page-content .search-form fieldset .search-submit {
+    background-color: #2222;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    font-size: 16px; }
+    .error404 .content-area .site-main .not-found .page-content .search-form fieldset .search-submit #search-icon {
+      color: #00cc00; }
+
+.error404 .content-area .site-main .not-found .page-header .page-title {
+  color: white;
+  font-size: 45px; }

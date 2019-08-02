@@ -9,11 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="logo">
-			<a href="http://localhost:3000/quotes/" rel="logo">
-			<img src="<?php echo get_stylesheet_directory_uri();?>/images/qod-logo.svg" alt="quotes logo">
-			</a>
-		</div>
+		
 		<?php if ( have_posts() ) : ?>
 		<?php
 			$post = array(

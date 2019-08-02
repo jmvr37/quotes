@@ -6,12 +6,28 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/qod-logo.svg" alt="quotes logo"></div>
+		
+       
+            <?php $args = array(
+                'posts_per_page'   => -1,
+            );
+            $posts_array = get_posts($args);
+            ?>
+
+            <div class="authors">
+                <h2>Quote Authors</h2>
+                <ul>
+                    <?php foreach ($posts_array as $post): ?>
+                   <li> <a href="<?php echo get_permalink($post->ID) ?>">
+                        <?php echo ($post->post_title); ?></a></li>
+                    <?php endforeach; ?>
+        </ul>
+            </div>
+
 
         <?php $cats = get_terms( array(
         'taxonomy' => 'category',
         'hide_empty' => false,
-        'posts_per_page' => 5,
         ) );?>
        <?php if ( ! empty( $cats ) ) : ?>
         
@@ -58,7 +74,7 @@ get_header(); ?>
 
 			
 		</div>
-			<button type="button" id="close-comments">Close Comments</button>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -40,3 +40,20 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 	remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
+
+add_action( 'pre_get_posts', 'target_main_category_query_with_conditional_tags' );
+ 
+function target_main_category_query_with_conditional_tags( $query ) {
+ 
+    if ( ! is_admin() && $query->is_main_query() ) {
+        // Not a query for an admin page.
+        // It's the main query for a front end page of your site.
+ 
+        if ( is_archive() ) {
+            // It's the main query for a category archive.
+ 
+            // Let's change the query for category archives.
+            $query->set( 'posts_per_page', 5 );
+        }
+    }
+}

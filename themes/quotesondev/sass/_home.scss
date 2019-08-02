@@ -1,0 +1,30 @@
+.home {
+  #page {
+    .site-content {
+      .content-area {
+        .site-main {
+          .entry-content {
+            p {
+              color: white;
+              font-size: 30px;
+            }
+          }
+          .entry-header {
+            display: flex;
+            .entry-title {
+              margin-right: 10px;
+              color: white;
+            }
+            .link-source {
+              color: white;
+              a {
+                text-decoration: none;
+                color: $green_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
