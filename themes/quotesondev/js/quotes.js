@@ -32,6 +32,13 @@ jQuery(document).ready(function($) {
       ) {
         $('.link-source').html(response[0]._qod_quote_source);
       }
+      if (
+        response[0]._qod_quote_source.length === 0 &&
+        response[0]._qod_quote_source_url.length === 0
+      ) {
+        $('.link-source').html('');
+      }
+
       const url = red_vars.home_url + '/' + response[0].slug;
       history.pushState(null, null, url);
     });
@@ -53,7 +60,7 @@ jQuery(document).ready(function($) {
         xhr.setRequestHeader('X-WP-Nonce', red_vars.wpapi_nonce);
       }
     }).done(function(response) {
-      alert('Success! Comments are closed for this post.');
+      alert('Success! your quote has been uploaded!.');
       console.log(response);
     });
   });

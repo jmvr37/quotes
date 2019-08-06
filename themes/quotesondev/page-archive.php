@@ -6,7 +6,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		
+		<h1>Archives</h1>
        
             <?php $args = array(
                 'posts_per_page'   => -1,
@@ -46,9 +46,6 @@ get_header(); ?>
     </ul>
     </div>
 <?php endif; ?>
-       
-       
-       
        
        <?php $terms = get_terms( array(
         'taxonomy' => 'post_tag',

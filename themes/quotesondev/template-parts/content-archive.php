@@ -16,6 +16,7 @@
 	</header><!-- .entry-content -->
 	<div class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<span class="link-source"></span>
 		
 </div><!-- .entry-header -->
 </article><!-- #post-## -->

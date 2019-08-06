@@ -1,13 +1,10 @@
-.home {
+.search {
   .hfeed.site {
-    max-width: 1080px;
+    // max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     padding: 2.5%;
     .site-content {
-      @include desktop {
-        margin: 4.5rem 175px 1.5rem;
-      }
       .logo {
         margin: 40px 0;
         img {
@@ -24,28 +21,6 @@
         }
       }
       .content-area {
-        position: relative;
-        &:before,
-        &:after {
-          color: #0c0;
-          font-family: FontAwesome;
-          font-size: 125px;
-          line-height: 125px;
-          position: absolute;
-          top: 0;
-          display: none;
-          @include desktop {
-            display: block;
-          }
-        }
-        &:before {
-          content: '\f10d';
-          left: -175px;
-        }
-        &:after {
-          content: '\f10e';
-          right: -175px;
-        }
         .site-main {
           .entry-content {
             p {
@@ -58,13 +33,15 @@
             .entry-title {
               margin-right: 10px;
               color: white;
-            }
-            .link-source {
-              color: white;
               a {
                 text-decoration: none;
                 color: $green_color;
               }
+            }
+          }
+          .entry-summary {
+            p {
+              color: white;
             }
           }
         }

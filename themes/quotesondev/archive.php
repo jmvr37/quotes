@@ -28,11 +28,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php
+
+			<div class="pages"><?php
 			echo paginate_links( array(
                 
             ) );
-		?>
+		?></div>
 
 		<?php else : ?>
 

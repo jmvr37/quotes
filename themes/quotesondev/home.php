@@ -23,7 +23,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; ?>
-		<button class="quo" type="button" id="new-quote">Show Me Another!</button>
+		
 
 		<?php else : ?>
 
@@ -32,6 +32,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<button class="quo" type="button" id="new-quote">Show Me Another!</button>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

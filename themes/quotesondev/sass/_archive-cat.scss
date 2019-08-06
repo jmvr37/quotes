@@ -2,9 +2,19 @@
   .site-content {
     .content-area {
       .site-main {
+        .pages {
+          margin-top: 3rem;
+          a {
+            text-decoration: none;
+            color: $green_color;
+            padding: 0 0.25rem;
+          }
+        }
         .page-header {
           .page-title {
             border-bottom: 1px dashed white;
+            margin-top: 3rem;
+            padding-bottom: 1.5rem;
           }
         }
         .articles {
@@ -13,6 +23,12 @@
             p {
               font-size: 20px;
               color: white;
+              @include tablet {
+                font-size: 22px;
+              }
+              @include desktop {
+                font-size: 30px;
+              }
             }
           }
           .entry-header {

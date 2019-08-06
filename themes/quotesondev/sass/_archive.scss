@@ -7,6 +7,21 @@
     color: white;
   }
   .site-content {
+    .logo {
+      margin: 40px 0;
+      img {
+        width: 300px;
+        margin: 0 auto;
+
+        @include tablet {
+          width: 500px;
+        }
+        @include desktop {
+          margin: 0 auto;
+          width: 700px;
+        }
+      }
+    }
     .content-area {
       .site-main {
         .authors {
