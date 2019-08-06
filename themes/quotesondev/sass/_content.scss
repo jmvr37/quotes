@@ -59,6 +59,9 @@ body {
         color: #0c0;
         margin: 0 auto;
         display: block;
+        &:hover {
+          color: darken($green_color, $amount: 8);
+        }
       }
       .site-main {
         .logo {
@@ -89,6 +92,9 @@ body {
     @include tablet {
       display: flex;
     }
+    @include desktop {
+      justify-content: flex-end;
+    }
 
     .footer-nav {
       ul {
@@ -103,6 +109,9 @@ body {
           a {
             text-decoration: none;
             color: $green_color;
+            &:hover {
+              color: darken($green_color, $amount: 8);
+            }
           }
         }
       }

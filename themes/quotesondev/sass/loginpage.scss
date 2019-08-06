@@ -1,4 +1,4 @@
-.post-template-default {
+.page-template-default.page {
   .hfeed.site {
     max-width: 1080px;
     width: 100%;
@@ -51,6 +51,17 @@
             p {
               color: white;
               font-size: 20px;
+
+              @include desktop {
+                color: white;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: $green_color;
+              &:hover {
+                color: darken($green_color, $amount: 8);
+              }
             }
           }
           .entry-header {
@@ -58,12 +69,10 @@
             .entry-title {
               margin-right: 10px;
               color: white;
-            }
-            .link-source {
-              color: white;
-              a {
-                text-decoration: none;
-                color: $green_color;
+              @include desktop {
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: white;
               }
             }
           }
