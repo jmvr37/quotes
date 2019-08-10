@@ -16,6 +16,6 @@
 	</header><!-- .entry-content -->
 	<div class="entry-header">
 		<div class="entry-title"><?php the_title(); ?></div>
-		<span class="link-source"></span>
+		<span class="link-source"><a><?php echo get_post_meta(get_the_ID(),'_qod_quote_source', true )?></a></span>
 </div><!-- .entry-header -->
 </article><!-- #post-## -->
