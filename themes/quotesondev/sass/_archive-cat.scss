@@ -72,10 +72,19 @@
             }
           }
           .entry-header {
+            display: flex;
+            flex-direction: row;
             .entry-title {
               margin: 30px 0;
               font-size: 20px;
               font-weight: normal;
+            }
+            .link-source {
+              display: flex;
+              margin: 33px;
+              a {
+                color: #f4f4f4;
+              }
             }
           }
         }

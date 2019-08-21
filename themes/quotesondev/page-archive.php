@@ -36,11 +36,11 @@ get_header(); ?>
        <ul>
         <?php
         foreach ( $cats as $taxonomy ) {
-         //   echo print_r( $taxonomy );
+        
 
          echo '<li><a href="'.get_term_link($taxonomy->slug, 'category').'">'.$taxonomy->name.'</a></li>';
 
-            // echo '<li>' . $taxonomy->name . '</li>'; /* wrap this whit an a tag with the link use another wp function */
+            
         }
         ?>
     </ul>
@@ -58,11 +58,11 @@ get_header(); ?>
        <ul>
         <?php
         foreach ( $terms as $taxonomy ) {
-         //   echo print_r( $taxonomy );
+         
 
          echo '<li><a href="'.get_term_link($taxonomy->slug, 'post_tag').'">'.$taxonomy->name.'</a></li>';
 
-            // echo '<li>' . $taxonomy->name . '</li>'; /* wrap this whit an a tag with the link use another wp function */
+            
         }
         ?>
     </ul>

@@ -937,15 +937,18 @@ object {
             font-size: 1.5rem;
             font-weight: 300;
             color: white; } }
-      .home .hfeed.site .site-content .content-area .site-main .entry-header .link-source {
-        color: white; }
+      .home .hfeed.site .site-content .content-area .site-main .entry-header a {
+        text-decoration: none;
+        color: #00cc00; }
         @media only screen and (min-width: 1000px) {
-          .home .hfeed.site .site-content .content-area .site-main .entry-header .link-source {
+          .home .hfeed.site .site-content .content-area .site-main .entry-header a {
             line-height: 2.5;
             font-size: 1rem; } }
-        .home .hfeed.site .site-content .content-area .site-main .entry-header .link-source a {
-          text-decoration: none;
+        .home .hfeed.site .site-content .content-area .site-main .entry-header a .link-source {
           color: #00cc00; }
+          .home .hfeed.site .site-content .content-area .site-main .entry-header a .link-source a {
+            color: #00cc00;
+            text-decoration: none; }
 
 @media only screen and (min-width: 1000px) {
   .archive.category .site-content {
@@ -1004,10 +1007,25 @@ object {
       @media only screen and (min-width: 1000px) {
         .archive.category .site-content .content-area .site-main .articles .entry-content p {
           font-size: 30px; } }
-    .archive.category .site-content .content-area .site-main .articles .entry-header .entry-title {
-      margin: 30px 0;
-      font-size: 20px;
-      font-weight: normal; }
+    .archive.category .site-content .content-area .site-main .articles .entry-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .archive.category .site-content .content-area .site-main .articles .entry-header .entry-title {
+        margin: 30px 0;
+        font-size: 20px;
+        font-weight: normal; }
+      .archive.category .site-content .content-area .site-main .articles .entry-header .link-source {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 33px; }
+        .archive.category .site-content .content-area .site-main .articles .entry-header .link-source a {
+          color: #f4f4f4; }
 
 @media only screen and (min-width: 1000px) {
   .archive.tag .site-content {
@@ -1182,11 +1200,23 @@ object {
       .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header .entry-title {
         margin-right: 10px;
         color: white; }
-      .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header .link-source {
-        color: white; }
-        .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header .link-source a {
-          text-decoration: none;
+        @media only screen and (min-width: 1000px) {
+          .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header .entry-title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: white; } }
+      .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header a {
+        text-decoration: none;
+        color: #00cc00; }
+        @media only screen and (min-width: 1000px) {
+          .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header a {
+            line-height: 2.5;
+            font-size: 1rem; } }
+        .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header a .link-source {
           color: #00cc00; }
+          .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header a .link-source a {
+            color: #00cc00;
+            text-decoration: none; }
 
 .search .hfeed.site {
   width: 100%;
@@ -1226,6 +1256,15 @@ object {
     .search .hfeed.site .site-content .content-area:after {
       content: '\f10e';
       right: -175px; }
+    .search .hfeed.site .site-content .content-area .site-main .number-pagination .page-numbers {
+      margin-top: 3rem;
+      text-decoration: none;
+      color: #00cc00;
+      padding: 0 0.25rem; }
+    .search .hfeed.site .site-content .content-area .site-main .number-pagination .current {
+      color: #404040;
+      font-family: "Exo";
+      font-size: 1rem; }
     .search .hfeed.site .site-content .content-area .site-main .entry-content p {
       color: white;
       font-size: 20px; }

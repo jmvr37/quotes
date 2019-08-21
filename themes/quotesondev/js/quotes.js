@@ -61,6 +61,7 @@ jQuery(document).ready(function($) {
       }
     }).done(function(response) {
       alert('Success! your quote has been uploaded!.');
+      $('#form')[0].reset();
       console.log(response);
     });
   });

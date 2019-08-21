@@ -58,12 +58,25 @@
             .entry-title {
               margin-right: 10px;
               color: white;
+              @include desktop {
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: white;
+              }
             }
-            .link-source {
-              color: white;
-              a {
-                text-decoration: none;
+            a {
+              text-decoration: none;
+              color: $green_color;
+              @include desktop {
+                line-height: 2.5;
+                font-size: 1rem;
+              }
+              .link-source {
                 color: $green_color;
+                a {
+                  color: $green_color;
+                  text-decoration: none;
+                }
               }
             }
           }

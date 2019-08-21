@@ -8,6 +8,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php
+query_posts('showposts=1&orderby=rand');
+the_post();
+?>
 	
 
 	<header class="entry-content">
@@ -16,6 +20,9 @@
 	</header><!-- .entry-content -->
 	<div class="entry-header">
 		<div class="entry-title"><?php the_title(); ?></div>
-		<span class="link-source"><a><?php echo get_post_meta(get_the_ID(),'_qod_quote_source', true )?></a></span>
+		
+		
+		<a href="<?php echo get_post_meta(get_the_ID(),'_qod_quote_source_url', true )?>">
+		<span class="link-source"><?php echo get_post_meta(get_the_ID(),'_qod_quote_source', true )?></span></a>
 </div><!-- .entry-header -->
 </article><!-- #post-## -->

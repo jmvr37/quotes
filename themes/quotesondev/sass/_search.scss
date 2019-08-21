@@ -1,6 +1,5 @@
 .search {
   .hfeed.site {
-    // max-width: 1080px;
     width: 100%;
     margin: 0 auto;
     padding: 2.5%;
@@ -47,6 +46,19 @@
           right: -175px;
         }
         .site-main {
+          .number-pagination {
+            .page-numbers {
+              margin-top: 3rem;
+              text-decoration: none;
+              color: $green_color;
+              padding: 0 0.25rem;
+            }
+            .current {
+              color: #404040;
+              font-family: $font__main;
+              font-size: 1rem;
+            }
+          }
           .entry-content {
             p {
               color: white;
