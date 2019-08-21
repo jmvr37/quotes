@@ -74,10 +74,24 @@
             }
           }
           .entry-header {
+            display: flex;
+            flex-direction: row;
             .entry-title {
               margin: 30px 0;
               font-size: 20px;
               font-weight: normal;
+            }
+            a {
+              text-decoration: none;
+              .link-source {
+                color: $green_color;
+                display: flex;
+                margin: 33px;
+                a {
+                  color: $green_color;
+                  text-decoration: none;
+                }
+              }
             }
           }
         }

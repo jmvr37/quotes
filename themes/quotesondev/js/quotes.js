@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(function($) {
   $('#new-quote').on('click', function(event) {
     event.preventDefault();
     $.ajax({

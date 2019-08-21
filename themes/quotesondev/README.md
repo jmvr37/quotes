@@ -1,6 +1,6 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Quotes on Dev is the fifth project of the web/dev course at RED Academy, it is a multipage website wich has quotes from different authors, and also allows the users to submit new quotes, the website works using the rest Api function built in Wordpress.
 
 ## Installation
 
@@ -21,3 +21,15 @@ Next you'll need to run `npm install` **inside your theme directory** to install
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
 And now would be a good time to `git init` :)
+
+# Technologies Used
+
+- Php
+- JavaScript
+- Jquery
+- HTML
+- Css & Sass
+
+# Browser Support
+
+### Chrome, Safari, Firefox, Mozilla & IE

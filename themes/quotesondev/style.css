@@ -1,8 +1,8 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
+Theme Name: Quotes on Dev
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
+Author: Jose V
+Author URI: https://jmvr37.github.io/quotes/
 Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1025,13 +1025,17 @@ object {
         margin: 30px 0;
         font-size: 20px;
         font-weight: normal; }
-      .archive.category .site-content .content-area .site-main .articles .entry-header .link-source {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin: 33px; }
-        .archive.category .site-content .content-area .site-main .articles .entry-header .link-source a {
-          color: #f4f4f4; }
+      .archive.category .site-content .content-area .site-main .articles .entry-header a {
+        text-decoration: none; }
+        .archive.category .site-content .content-area .site-main .articles .entry-header a .link-source {
+          color: #00cc00;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin: 33px; }
+          .archive.category .site-content .content-area .site-main .articles .entry-header a .link-source a {
+            color: #00cc00;
+            text-decoration: none; }
 
 @media only screen and (min-width: 1000px) {
   .archive.tag .site-content {
@@ -1092,10 +1096,29 @@ object {
       @media only screen and (min-width: 1000px) {
         .archive.tag .site-content .content-area .site-main .articles .entry-content p {
           font-size: 30px; } }
-    .archive.tag .site-content .content-area .site-main .articles .entry-header .entry-title {
-      margin: 30px 0;
-      font-size: 20px;
-      font-weight: normal; }
+    .archive.tag .site-content .content-area .site-main .articles .entry-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .archive.tag .site-content .content-area .site-main .articles .entry-header .entry-title {
+        margin: 30px 0;
+        font-size: 20px;
+        font-weight: normal; }
+      .archive.tag .site-content .content-area .site-main .articles .entry-header a {
+        text-decoration: none; }
+        .archive.tag .site-content .content-area .site-main .articles .entry-header a .link-source {
+          color: #00cc00;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin: 33px; }
+          .archive.tag .site-content .content-area .site-main .articles .entry-header a .link-source a {
+            color: #00cc00;
+            text-decoration: none; }
 
 @media only screen and (min-width: 1000px) {
   .error404 .hfeed .site-content {
@@ -1204,7 +1227,7 @@ object {
       font-weight: 900; }
     .post-template-default .hfeed.site .site-content .content-area .site-main .entry-content p {
       color: white;
-      font-size: 20px; }
+      font-size: 2.5rem; }
     .post-template-default .hfeed.site .site-content .content-area .site-main .entry-header {
       display: -webkit-box;
       display: -ms-flexbox;

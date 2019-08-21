@@ -81,11 +81,16 @@
               font-size: 20px;
               font-weight: normal;
             }
-            .link-source {
-              display: flex;
-              margin: 33px;
-              a {
-                color: #f4f4f4;
+            a {
+              text-decoration: none;
+              .link-source {
+                color: $green_color;
+                display: flex;
+                margin: 33px;
+                a {
+                  color: $green_color;
+                  text-decoration: none;
+                }
               }
             }
           }
