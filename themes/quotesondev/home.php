@@ -13,8 +13,9 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 		<?php
 			$post = array(
+			'orderby'=>'rand',
         	'posts_per_page' => 1);
-
+				
     		$_post = new WP_Query( $post );
 		?>
 			<?php /* Start the Loop */ ?>

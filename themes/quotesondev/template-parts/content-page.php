@@ -8,10 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php
-query_posts('showposts=1&orderby=rand');
-the_post();
-?>
+
 	
 
 	<header class="entry-content">

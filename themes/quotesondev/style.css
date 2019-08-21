@@ -756,7 +756,7 @@ object {
     position: relative; }
     .page-template .site-content .content-area:before, .page-template .site-content .content-area:after {
       color: #0c0;
-      font-family: FontAwesome;
+      font-family: 'Font Awesome 5 Free';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
@@ -767,10 +767,12 @@ object {
           display: block; } }
     .page-template .site-content .content-area:before {
       content: '\f10d';
-      left: -175px; }
+      left: -175px;
+      font-weight: 900; }
     .page-template .site-content .content-area:after {
       content: '\f10e';
-      right: -175px; }
+      right: -175px;
+      font-weight: 900; }
     .page-template .site-content .content-area .site-main .authors ul {
       list-style: none;
       margin-left: 0;
@@ -903,7 +905,7 @@ object {
     position: relative; }
     .home .hfeed.site .site-content .content-area:before, .home .hfeed.site .site-content .content-area:after {
       color: #0c0;
-      font-family: FontAwesome;
+      font-family: 'Font Awesome 5 Free';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
@@ -914,10 +916,12 @@ object {
           display: block; } }
     .home .hfeed.site .site-content .content-area:before {
       content: '\f10d';
-      left: -175px; }
+      left: -175px;
+      font-weight: 900; }
     .home .hfeed.site .site-content .content-area:after {
       content: '\f10e';
-      right: -175px; }
+      right: -175px;
+      font-weight: 900; }
     .home .hfeed.site .site-content .content-area .site-main .entry-content p {
       color: white;
       font-size: 20px; }
@@ -971,7 +975,7 @@ object {
   position: relative; }
   .archive.category .site-content .content-area:before, .archive.category .site-content .content-area:after {
     color: #0c0;
-    font-family: FontAwesome;
+    font-family: 'Font Awesome 5 Free';
     font-size: 125px;
     line-height: 125px;
     position: absolute;
@@ -982,10 +986,12 @@ object {
         display: block; } }
   .archive.category .site-content .content-area:before {
     content: '\f10d';
-    left: -175px; }
+    left: -175px;
+    font-weight: 900; }
   .archive.category .site-content .content-area:after {
     content: '\f10e';
-    right: -175px; }
+    right: -175px;
+    font-weight: 900; }
   .archive.category .site-content .content-area .site-main .pages {
     margin-top: 3rem; }
     .archive.category .site-content .content-area .site-main .pages a {
@@ -1048,7 +1054,7 @@ object {
   position: relative; }
   .archive.tag .site-content .content-area:before, .archive.tag .site-content .content-area:after {
     color: #0c0;
-    font-family: FontAwesome;
+    font-family: 'Font Awesome 5 Free';
     font-size: 125px;
     line-height: 125px;
     position: absolute;
@@ -1059,10 +1065,12 @@ object {
         display: block; } }
   .archive.tag .site-content .content-area:before {
     content: '\f10d';
-    left: -175px; }
+    left: -175px;
+    font-weight: 900; }
   .archive.tag .site-content .content-area:after {
     content: '\f10e';
-    right: -175px; }
+    right: -175px;
+    font-weight: 900; }
   .archive.tag .site-content .content-area .site-main .pages {
     margin-top: 3rem; }
     .archive.tag .site-content .content-area .site-main .pages a {
@@ -1110,7 +1118,7 @@ object {
   position: relative; }
   .error404 .hfeed .site-content .content-area:before, .error404 .hfeed .site-content .content-area:after {
     color: #0c0;
-    font-family: FontAwesome;
+    font-family: 'Font Awesome 5 Free';
     font-size: 125px;
     line-height: 125px;
     position: absolute;
@@ -1121,10 +1129,12 @@ object {
         display: block; } }
   .error404 .hfeed .site-content .content-area:before {
     content: '\f10d';
-    left: -175px; }
+    left: -175px;
+    font-weight: 900; }
   .error404 .hfeed .site-content .content-area:after {
     content: '\f10e';
-    right: -175px; }
+    right: -175px;
+    font-weight: 900; }
   .error404 .hfeed .site-content .content-area .site-main .not-found .page-content p {
     color: white;
     font-size: 20px; }
@@ -1175,7 +1185,7 @@ object {
     position: relative; }
     .post-template-default .hfeed.site .site-content .content-area:before, .post-template-default .hfeed.site .site-content .content-area:after {
       color: #0c0;
-      font-family: FontAwesome;
+      font-family: 'Font Awesome 5 Free';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
@@ -1186,10 +1196,12 @@ object {
           display: block; } }
     .post-template-default .hfeed.site .site-content .content-area:before {
       content: '\f10d';
-      left: -175px; }
+      left: -175px;
+      font-weight: 900; }
     .post-template-default .hfeed.site .site-content .content-area:after {
       content: '\f10e';
-      right: -175px; }
+      right: -175px;
+      font-weight: 900; }
     .post-template-default .hfeed.site .site-content .content-area .site-main .entry-content p {
       color: white;
       font-size: 20px; }
@@ -1241,7 +1253,7 @@ object {
     position: relative; }
     .search .hfeed.site .site-content .content-area:before, .search .hfeed.site .site-content .content-area:after {
       color: #0c0;
-      font-family: FontAwesome;
+      font-family: 'Font Awesome 5 Free';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
@@ -1252,10 +1264,12 @@ object {
           display: block; } }
     .search .hfeed.site .site-content .content-area:before {
       content: '\f10d';
-      left: -175px; }
+      left: -175px;
+      font-weight: 900; }
     .search .hfeed.site .site-content .content-area:after {
       content: '\f10e';
-      right: -175px; }
+      right: -175px;
+      font-weight: 900; }
     .search .hfeed.site .site-content .content-area .site-main .number-pagination .page-numbers {
       margin-top: 3rem;
       text-decoration: none;
@@ -1305,7 +1319,7 @@ object {
     position: relative; }
     .page-template-default.page .hfeed.site .site-content .content-area:before, .page-template-default.page .hfeed.site .site-content .content-area:after {
       color: #0c0;
-      font-family: FontAwesome;
+      font-family: 'Font Awesome 5 Free';
       font-size: 125px;
       line-height: 125px;
       position: absolute;
@@ -1316,10 +1330,12 @@ object {
           display: block; } }
     .page-template-default.page .hfeed.site .site-content .content-area:before {
       content: '\f10d';
-      left: -175px; }
+      left: -175px;
+      font-weight: 900; }
     .page-template-default.page .hfeed.site .site-content .content-area:after {
       content: '\f10e';
-      right: -175px; }
+      right: -175px;
+      font-weight: 900; }
     .page-template-default.page .hfeed.site .site-content .content-area .site-main .entry-content p {
       color: white;
       font-size: 20px; }

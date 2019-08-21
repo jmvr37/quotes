@@ -11,18 +11,9 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
+		
 				<div class="footer-nav">	
-				<ul>
-						<li>
-					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/quotes-on-dev/' ); ?>"> About</a>
-						</li>
-					<li>
-					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/archive/' ); ?>"> Archives</a>
-					</li>
-					<li>
-					<a href="<?php echo esc_url( 'http://localhost:3000/quotes/submit/' ); ?>"> Submit a Quote</a>
-					</li>
-					</ul>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</div>
 				<p>Brought to you by
 					<a href="<?php echo esc_url( 'https://redacademy.com/vancouver/' ); ?>"> RED Academy</a>

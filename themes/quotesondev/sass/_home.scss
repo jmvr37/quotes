@@ -28,7 +28,7 @@
         &:before,
         &:after {
           color: #0c0;
-          font-family: FontAwesome;
+          font-family: 'Font Awesome 5 Free';
           font-size: 125px;
           line-height: 125px;
           position: absolute;
@@ -41,10 +41,12 @@
         &:before {
           content: '\f10d';
           left: -175px;
+          font-weight: 900;
         }
         &:after {
           content: '\f10e';
           right: -175px;
+          font-weight: 900;
         }
         .site-main {
           .entry-content {
